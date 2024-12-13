@@ -40,7 +40,7 @@ app.use(express.urlencoded({extended: false}));
 // Creando las rutas
 app.get('/', (req, res)=>{
     try{
-    res.status(200).json({message: 'Bievenido al servidor 3001'})
+        res.status(200).json({message: 'Bievenido al servidor 3001'})
     }catch(error){
         res.status(404).json({message: error.message});
     }
